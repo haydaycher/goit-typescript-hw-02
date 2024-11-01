@@ -1,0 +1,28 @@
+/* .card {
+  padding: 2em;
+}
+.image {
+  width: 360px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  height: 200px;
+  object-fit: cover;
+} */
+.card {
+  padding: 1em; /* Зменшено відступ для кращого вигляду */
+  background-color: #fff; /* Білий фон */
+  border-radius: 8px; /* Згладжування країв */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Легка тінь */
+  transition: box-shadow 0.3s ease; /* Анімація тіні */
+}
+
+.card:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Зміна тіні при наведенні */
+}
+
+.image {
+  width: 100%; /* Заповнити всю ширину картки */
+  height: auto; /* Автоматична висота для зображення */
+  border-radius: 8px; /* Згладжування країв зображення */
+  object-fit: cover; /* Краще вписування зображення */
+}
+

@@ -1,0 +1,34 @@
+/* .text {
+  display: flex;
+  justify-content: center;
+  font-size: 36px;
+  font-weight: bold;
+  color: red;
+
+  border: 1px solid red;
+  border-radius: 5px;
+  padding: 10px;
+}
+.error {
+  display: flex;
+  justify-content: center;
+  font-size: 36px;
+  font-weight: bold;
+  color: red;
+
+  border: 1px solid red;
+  border-radius: 5px;
+  padding: 10px;
+} */
+.errorMessage {
+  display: flex;
+  justify-content: center;
+  font-size: 36px;
+  font-weight: bold;
+  color: white; /* Змінив колір тексту на білий для кращого контрасту */
+  background-color: red; /* Додано фон для кращої видимості */
+  border: 1px solid darkred; /* Змінив колір рамки на темно-червоний */
+  border-radius: 5px;
+  padding: 10px;
+  margin: 20px; /* Додано відступ для кращого вигляду */
+}

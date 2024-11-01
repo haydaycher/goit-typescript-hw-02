@@ -1,0 +1,86 @@
+/* .modal {
+  margin: 0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1100;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+} */
+.modal {
+  margin: 0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1100;
+  animation: fadeIn 0.3s ease; /* Додаємо анімацію */
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.7
+  ); /* Зменшили прозорість для кращого контрасту */
+  z-index: 1000;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Центруємо вміст */
+}
+
+.image {
+  max-width: 100%; /* Зберігаємо пропорції зображення */
+  border-radius: 8px;
+}
+
+.closeButton {
+  margin-top: 20px; /* Додаємо відступ */
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f44336; /* Червоний колір для кнопки закриття */
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Анімація при наведенні */
+}
+
+.closeButton:hover {
+  background-color: #d32f2f; /* Темніший червоний при наведенні */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

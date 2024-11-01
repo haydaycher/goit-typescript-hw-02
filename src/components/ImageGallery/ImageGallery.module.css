@@ -1,0 +1,46 @@
+/* .gallery {
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin: 24px auto;
+  padding: 0;
+  list-style-type: none;
+} */
+.gallery {
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin: 24px auto;
+  padding: 0;
+  list-style-type: none;
+}
+
+.listItem {
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Додано анімацію */
+  border-radius: 8px; /* Згладжування країв */
+  overflow: hidden; /* Випадкові зображення не виходять за межі */
+}
+
+.listItem:hover {
+  transform: translateY(-5px); /* Підняття картки при наведенні */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Тінь при наведенні */
+}
+
+/* Опціонально: стилі для фонових кольорів */
+.imageCard {
+  background-color: #fff; /* Білий фон для картки */
+  border: 1px solid #eee; /* Легка обводка для картки */
+  border-radius: 8px; /* Згладжування країв */
+  transition: background-color 0.3s ease; /* Анімація зміни кольору фону */
+}
+
+.imageCard:hover {
+  background-color: #f9f9f9; /* Світліший фон при наведенні */
+}
