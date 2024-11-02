@@ -63,12 +63,12 @@
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  transition: background 0.3s, transform 0.2s;
+  transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .searchBtn:hover {
   background: linear-gradient(135deg, #2ac06a, #4d31f3);
-  transform: scale(1.05);
+  transform: scale(1.05) rotate(1deg);
   color: #ffffff;
 }
 
@@ -88,6 +88,16 @@
 
 .searchBtn:hover::before {
   transform: translate(-50%, -50%) scale(1);
+}
+
+.searchBtn span {
+  position: relative;
+  z-index: 1;
+  transition: color 0.3s ease;
+}
+
+.searchBtn:hover span {
+  color: #ffffff;
 }
 
 .icon {

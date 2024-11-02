@@ -82,7 +82,7 @@ const App: React.FC = () => {
       )}
 
       {error && <ErrorMessage message={error.message} />}
-      {isEmpty && <ErrorMessage message="Try again." />}
+      {isEmpty && <ErrorMessage message="Try again..." />}
       {currentPage >= totalPages && <p>END OF COLLECTION</p>}
       {images.length > 0 && !isLoading && currentPage < totalPages && (
         <LoadMoreBtn onClick={handleLoadMore} />
