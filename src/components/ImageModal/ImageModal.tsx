@@ -1,6 +1,6 @@
 import Modal from "react-modal";
 import css from "./ImageModal.module.css";
-import { ImageData } from "../../photos";
+import { ImageData } from "../../photos.js";
 import React from "react";
 
 interface ImageModalProps {

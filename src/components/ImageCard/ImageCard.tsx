@@ -1,6 +1,6 @@
 import css from "./ImageCard.module.css";
 import React from "react";
-import { ImageData } from "../../photos";
+import { ImageData } from "../../photos.js";
 
 interface ImageCardProps {
   image: ImageData;

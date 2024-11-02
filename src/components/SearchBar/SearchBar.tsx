@@ -1,9 +1,6 @@
 import React, { useState, FormEvent, ChangeEvent } from "react";
-import toast, { Toaster } from "react-hot-toast";
 import { IoSearchOutline } from "react-icons/io5";
 import css from "./SearchBar.module.css";
-
-const notify = () => toast.error("Please enter a search term");
 
 interface SearchBarProps {
   onSubmit: (searchQuery: string) => void;
@@ -19,12 +16,12 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSubmit }) => {
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!searchQuery.trim()) {
-      notify();
+      console.error("Please enter a search term");
       return;
     }
 
     onSubmit(searchQuery);
-    setSearchQuery(""); 
+    setSearchQuery("");
   };
 
   return (
@@ -47,7 +44,6 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSubmit }) => {
           </button>
         </div>
       </form>
-      <Toaster position="top-center" reverseOrder={false} />
     </header>
   );
 };

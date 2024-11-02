@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { fetchImages, ImageData } from "../../photos";
-import SearchBar from "../SearchBar/SearchBar";
-import ImageGallery from "../ImageGallery/ImageGallery";
-import ErrorMessage from "../ErrorMessage/ErrorMessage";
-import Loader from "../Loader/Loader";
-import LoadMoreBtn from "../LoadMoreBtn/LoadMoreBtn";
-import ImageModal from "../ImageModal/ImageModal";
+import { fetchImages, ImageData } from "../../photos.js";
+import SearchBar from "../SearchBar/SearchBar.js";
+import ImageGallery from "../ImageGallery/ImageGallery.js";
+import ErrorMessage from "../ErrorMessage/ErrorMessage.js";
+import Loader from "../Loader/Loader.js";
+import LoadMoreBtn from "../LoadMoreBtn/LoadMoreBtn.js";
+import ImageModal from "../ImageModal/ImageModal.js";
 import css from "../App/App.module.css";
 
 const App: React.FC = () => {
@@ -64,7 +64,7 @@ const App: React.FC = () => {
   };
 
   const openModal = (image: ImageData) => {
-    setSelectedImage(image); 
+    setSelectedImage(image);
     setModalIsOpen(true);
   };
 
@@ -92,7 +92,7 @@ const App: React.FC = () => {
         <ImageModal
           isOpen={modalIsOpen}
           onRequestClose={closeModal}
-          image={selectedImage} 
+          image={selectedImage}
         />
       )}
     </div>
