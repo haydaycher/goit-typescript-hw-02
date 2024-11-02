@@ -1,11 +1,6 @@
-/* .loader {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
 .loader {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Центруємо лоадер по вертикалі */
+  height: 100vh;
 }

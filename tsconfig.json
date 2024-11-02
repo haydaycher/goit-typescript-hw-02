@@ -2,20 +2,20 @@
   "compilerOptions": {
     "target": "ESNext",
     "useDefineForClassFields": true,
-
-    "allowJs": false, // Змінено на false, якщо не використовуєте JS
-    "skipLibCheck": true,
+    "allowJs": false,
+    "skipLibCheck": false,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
-    "module": "node16",
+    "module": "esnext",
     "lib": ["es2015", "dom"],
-    "moduleResolution": "node16",
+    "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "types": ["vite/client"]
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]

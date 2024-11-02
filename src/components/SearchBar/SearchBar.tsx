@@ -38,7 +38,8 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSubmit }) => {
             autoComplete="off"
             autoFocus
           />
-          <button type="submit" className={css.btn}>
+          <span className={css.focusBorder}></span>
+          <button type="submit" className={css.searchBtn}>
             <IoSearchOutline className={css.icon} />
             Search
           </button>
